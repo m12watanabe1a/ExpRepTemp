@@ -106,6 +106,7 @@ VS CodeでLaTeX Workshopをしようしている場合のsettings.jsonの設定�
     ],
     "latex-workshop.latex.clean.fileTypes": [
         "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", "*.toc", "*.acn", "*.acr", "*.alg", "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk", "*.synctex.gz",
+        
         // for Beamer files
         "_minted*", "*.nav", "*.snm", "*.vrb",
         

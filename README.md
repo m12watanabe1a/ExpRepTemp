@@ -1,5 +1,5 @@
 # ExpRepTem
-実験レポート用のテンプレートです．
+実験レポート用のテンプレートです．[プレビュー](https://github.com/m12watanabe1a/ExpRepTemp/blob/master/report.pdf)
 
 ## セットアップ
 以下の項目を自分に合わせてセットアップしてください．

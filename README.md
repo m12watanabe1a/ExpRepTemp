@@ -75,3 +75,44 @@ ref.bibに参考文献が記載されています．
   year  = {2019},
 }
 ```
+
+## コンパイル
+.latexmkファイルを追加したので以下のコマンドでビルドできます．
+
+```bash
+$latexmk report.tex
+```
+
+### VS Codeのレシピ
+VS CodeでLaTeX Workshopをしようしている場合のsettings.jsonの設定は以下を参考にしてください．
+```json
+    // LaTeX Setup
+    "latex-workshop.latex.recipes": [
+        {  
+            "name": "latexmk",  
+            "tools": [  
+              "latexmk"  
+            ]  
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+        },
+    ],
+    "latex-workshop.latex.magic.args": [
+        "-f", "-gg", "-pv", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
+    ],
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", "*.toc", "*.acn", "*.acr", "*.alg", "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk", "*.synctex.gz",
+        // for Beamer files
+        "_minted*", "*.nav", "*.snm", "*.vrb",
+        
+        // user added
+        "*.run.xml","*.dvi","*.bcf"
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoClean.run": "onFailed",
+    "latex-workshop.message.update.show": false,
+```

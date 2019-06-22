@@ -1,4 +1,4 @@
-\documentclass[11pt,a4j, titlepage]{jarticle}
+\documentclass[11pt,a4j, titlepage]{jsarticle}
 
 \usepackage[dvipdfmx,hiresbb]{graphicx}
 \usepackage[version=3]{mhchem}
@@ -53,6 +53,13 @@
     \end{center}
 }
 
+% 実験テーマ
+\newcommand{\theme}[1]{
+    \part*{
+        \Large #1
+    }
+}
+
 % Title
 \title{総合タイトル}
 \date{\today}
@@ -71,7 +78,7 @@
 
 \subtitle{2019/*/*}
 
-\part*{実験1:タイトル}
+\theme{実験1:タイトル}
 \section{目的}
 \section{実験}
 \section{実験結果}
@@ -97,7 +104,7 @@
 
 \subtitle{2019/*/*}
 
-\part*{実験2:タイトル}
+\theme{実験2:タイトル}
 \section{目的}
 \section{実験}
 \section{実験結果}

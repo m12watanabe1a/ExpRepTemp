@@ -84,7 +84,7 @@ $latexmk report.tex
 ```
 
 ### VS Codeのレシピ
-VS CodeでLaTeX Workshopを使用している場合のsettings.jsonの設定は以下を参考にしてください．
+VS Codeで[LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop)を使用している場合のsettings.jsonの設定は以下を参考にしてください．
 ```json
     // LaTeX Setup
     "latex-workshop.latex.recipes": [

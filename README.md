@@ -77,7 +77,7 @@ ref.bibに参考文献が記載されています．
 ```
 
 ## コンパイル
-.latexmkファイルを追加したので以下のコマンドでビルドできます．
+[.latexmk](https://github.com/m12watanabe1a/ExpRepTemp/blob/master/.latexmkrc)ファイルを追加したので以下のコマンドでビルドできます．
 
 ```bash
 $latexmk report.tex

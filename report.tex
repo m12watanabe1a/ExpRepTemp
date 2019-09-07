@@ -1,78 +1,7 @@
 \documentclass[11pt,a4j, titlepage]{jsarticle}
 
-\usepackage[dvipdfmx,hiresbb]{graphicx}
-\usepackage[version=3]{mhchem}
-\usepackage{siunitx}
-\usepackage{amsmath}
-\usepackage{cite}
-
-% 名前
-\newcommand{\myname}{
-    実験 好太郎
-}
-
-% 学籍番号
-\newcommand{\myid}{
-    00-000000
-}
-
-% 共同実験者
-\newcommand{\mymember}{
-    実験 好子，
-    実験 好美，
-    実験 好夫，
-    実験 好二郎，
-    実験 好三郎
-}
-
-% メールアドレス
-\newcommand{\mymail}{
-    mymail@address.com
-}
-
-% 参照
-\newcommand{\refeq}[1]{
-    式（\ref{#1}）
-}
-\newcommand{\reffig}[1]{
-    図\ref{#1}
-}
-\newcommand{\reftab}[1]{
-    表\ref{#1}
-}
-\newcommand{\refsec}[1]{
-    章\ref{#1}
-}
-
-\newcommand{\subtitle}[1]{
-    \begin{center}
-        \LARGE
-        マテリアル工学実験レポート\\
-        \vspace*{1em}
-        \normalsize
-        \myid\\
-        \Large
-        \myname \\
-        \normalsize
-        \vspace*{1em}
-        \small
-        実験日 \\
-        \normalsize
-        #1 \\
-        \vspace*{1em}
-        \small
-        共同実験者 \\
-        \normalsize
-        \mymember
-    \end{center}
-}
-
-% 実験テーマ
-\newcommand{\theme}[1]{
-    \part*{
-        \Large #1
-    }
-}
+\input{assets/preamble}
+\input{assets/info.tex}
 
 % Title
 \title{総合タイトル}
@@ -82,10 +11,8 @@
     \myname\thanks{\mymail}
 }
 
-
 \begin{document}
 \maketitle
-
 
 % 実験レポート1
 % ここから
@@ -102,16 +29,8 @@
 % 実験レポート1
 % ここまで
 
-
-% Reset All Counter
 \newpage
-\setcounter{page}{1}
-\setcounter{section}{0}
-\setcounter{equation}{0}
-\setcounter{section}{0}
-\setcounter{figure}{0}
-\setcounter{table}{0}
-
+\resetcounters
 
 % 実験レポート2
 % ここから

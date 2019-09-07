@@ -2,7 +2,7 @@
 実験レポート用のテンプレートです．[プレビュー](https://github.com/m12watanabe1a/ExpRepTemp/blob/master/report.pdf)
 
 ## セットアップ
-以下の``` assets/info.tes ```項目を自分に合わせてセットアップしてください．
+以下の``` assets/info.tex ```項目を自分に合わせてセットアップしてください．
 
 ```tex
 % 名前

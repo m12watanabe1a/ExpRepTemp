@@ -101,9 +101,6 @@ VS CodeでLaTeX Workshopを使用している場合のsettings.jsonの設定は�
             "command": "latexmk",
         },
     ],
-    "latex-workshop.latex.magic.args": [
-        "-f", "-gg", "-pv", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
-    ],
     "latex-workshop.latex.clean.fileTypes": [
         "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", "*.toc", "*.acn", "*.acr", "*.alg", "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk", "*.synctex.gz",
         "_minted*", "*.nav", "*.snm", "*.vrb",
